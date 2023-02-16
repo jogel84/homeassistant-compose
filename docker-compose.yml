@@ -5,8 +5,9 @@ services:
     hostname: homeassistant
     image: "homeassistant/home-assistant:latest"
     volumes:
-      - ${HASS_HOME}/hass/config:/config
       - /etc/localtime:/etc/localtime:ro
+      - /etc/timezone:/etc/timezone:ro
+      - ${HASS_HOME}/hass/config:/config
     restart: unless-stopped
     privileged: true
     network_mode: host
