@@ -4,6 +4,8 @@ services:
     container_name: homeassistant
     hostname: homeassistant
     image: "homeassistant/home-assistant:latest"
+    enviroment:
+      - trusted_proxies=${IP_PROXY}
     volumes:
       - /etc/localtime:/etc/localtime:ro
       - /etc/timezone:/etc/timezone:ro
