@@ -6,7 +6,7 @@ services:
     image: "homeassistant/home-assistant:latest"
     volumes:
       - /etc/localtime:/etc/localtime:ro
-      #- /etc/timezone:/etc/timezone:ro
+      - /etc/timezone:/etc/timezone:ro
       - ${HASS_HOME}/hass/config:/config
     restart: unless-stopped
     privileged: true
