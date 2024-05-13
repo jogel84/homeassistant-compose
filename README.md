@@ -2,4 +2,7 @@
 
 El archivo usa las variables:
 
-- HASS_HOME = Ubicación fisica en el host donde dejar la configuración de home assistant
+|  Parámetro                    |   Función                                                     |
+|:------------------------------|:--------------------------------------------------------------|
+| HASS_HOME                     | Ruta donde se guardan los datos dentro del servidor físico    |
+| CONTAINER_HASS_VERSION        | Versión de contenedor                                         |
