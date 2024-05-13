@@ -2,7 +2,7 @@ services:
   homeassistant:
     container_name: homeassistant
     hostname: homeassistant
-    image: "homeassistant/home-assistant:latest"
+    image: "homeassistant/home-assistant:${CONTAINER_HASS_VERSION}"
     volumes:
       - /etc/localtime:/etc/localtime:ro
       - /etc/timezone:/etc/timezone:ro
