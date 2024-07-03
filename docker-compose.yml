@@ -10,3 +10,13 @@ services:
     restart: unless-stopped
     privileged: true
     network_mode: host
+
+  ewelink_smart_home:
+    image: ewelink_smart_home
+    restart: unless-stopped
+    network_mode: host
+    environment:
+      - HA_URL=http://localhost:8123
+      - SUPERVISOR_TOKEN=${SUPERVISOR_TOKEN}
+    volumes:
+      - ${HASS_HOME}/data:/data
