@@ -12,7 +12,7 @@ services:
     network_mode: host
   
   ewelink_smart_home:
-    image: e5idns/ewelink_smart_home
+    image: 5idns/ewelink_smart_home
     restart: unless-stopped
     network_mode: host
     environment:
