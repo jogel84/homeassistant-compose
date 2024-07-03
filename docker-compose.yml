@@ -16,7 +16,7 @@ services:
     restart: unless-stopped
     network_mode: host
     environment:
-      - HA_URL=http://localhost:8123
+      - HA_URL=${HASS_URL}
       - SUPERVISOR_TOKEN=${SUPERVISOR_TOKEN}
     volumes:
       - ${HASS_HOME}data:/data
